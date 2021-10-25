@@ -1,6 +1,8 @@
 package addressbook;
 
 
+import java.util.Scanner;
+
 public class AddressBookMain {
     public static void main(String[] args) {
         System.out.println("Welcome to Address Book");
@@ -15,17 +17,31 @@ public class AddressBookMain {
         c1.setPhoneNumber("565478521");
         c1.setEmail("Shashank@gmail.com");
 
-        AddressBook c2= new AddressBook();
-        c2.setFirstName("Hindusthani");
-        c2.setLastName("Bhau");
-        c2.setAddress("Andheri");
-        c2.setCity("Mumbai");
-        c2.setState("Maharasthra");
-        c2.setZip("445877");
-        c2.setPhoneNumber("123456987");
-        c2.setEmail("Bhau@gmail.com");
+
+        AddressBook addressBook = new AddressBook();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("------- Enter details of new person ---------");
+
+        System.out.print("Enter Frist Name: ");
+        addressBook.setFirstName(scanner.nextLine());
+        System.out.print("Enter Last Name: ");
+        addressBook.setLastName(scanner.nextLine());
+        System.out.print("Enter Address: ");
+        addressBook.setAddress(scanner.nextLine());
+        System.out.print("Enter City: ");
+        addressBook.setCity(scanner.nextLine());
+        System.out.print("Enter State: ");
+        addressBook.setState(scanner.nextLine());
+        System.out.print("Enter Pin: ");
+        addressBook.setZip(scanner.nextLine());
+        System.out.print("Enter Phone Number: ");
+        addressBook.setPhoneNumber(scanner.nextLine());
+        System.out.print("Enter Email: ");
+        addressBook.setEmail(scanner.nextLine());
+
+
 
         System.out.println(c1);
-        System.out.println(c2);
+        System.out.println(addressBook);
     }
 }

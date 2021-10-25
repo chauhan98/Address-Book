@@ -61,7 +61,7 @@ public class AddressBook {
 
     @Override
     public String toString() {
-        return "AddressBook \nfirstName=" + firstName +
+        return "AddressBook \n [firstName=" + firstName +
                 ",\n lastName=" + lastName + "\n"+
                 " address=" + address + ",\n city="+ city + ",\n state=" + state + ", zip="
                 + zip + ",\n phoneNumber=" + phoneNumber +
